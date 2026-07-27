@@ -1,0 +1,12 @@
+* TODO Task 1
+:PROPERTIES:
+:ID: task-1
+:END:
+Description of the first task.
+
+* TODO Task 2
+:PROPERTIES:
+:ID: task-2
+:BLOCKER: task-1
+:END:
+Description of the second task, which waits for task-1.   
