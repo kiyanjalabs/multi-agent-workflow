@@ -30,13 +30,6 @@ Description of the second task, which waits for task-1.
 
 Define an AGENT_PROMPT.md file that instructs the AI model on how to operate. The prompt must include instructions to:
 
-Synchronize: Run git pull --rebase before checking for tasks.
-Select: Pick a TODO task with no active blockers.
-Update: Mark the task IN-PROGRESS, commit, and push.
-Execute: Perform the task logic.
-Complete: Mark the task DONE, commit, and push.
-Exit: Run exit 0 if no tasks remain.
-
 ...
 
 Synchronize: Run git pull --rebase before checking for tasks.

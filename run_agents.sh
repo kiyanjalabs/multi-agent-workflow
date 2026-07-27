@@ -1,5 +1,5 @@
 #!/bin/bash
-MAX_JOBS=16
+MAX_JOBS=8
 AGENT_NUM=0
 
 while true; do
@@ -24,5 +24,5 @@ while true; do
     
     # Use your preferred CLI client (e.g., Claude, GPT)
     # --dangerously-skip-permissions allows autonomous action
-    claude --dangerously-skip-permissions -p "$(cat AGENT_PROMPT.md | sed "s/YOUR_AGENT_NUMBER/$AGENT_NUM/g")" &> "$LOGFILE" &
+    opencode --dangerously-skip-permissions -p "$(cat AGENT_PROMPT.md | sed "s/YOUR_AGENT_NUMBER/$AGENT_NUM/g")" &> "$LOGFILE" &
 done   
